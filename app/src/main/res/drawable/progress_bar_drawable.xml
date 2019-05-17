@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!--layer-list表示item可以进行层级叠加-->
+    <item android:id="@android:id/background"
+        android:drawable="@color/loading_web_bg_color">
+        <!--背景颜色-->
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <!--gradient表示颜色梯度渐变-->
+                <gradient
+                    android:startColor="#55fa03"
+                    android:centerColor="#05cf16"
+                    android:endColor="#037712"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>
